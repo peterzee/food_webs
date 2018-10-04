@@ -1,5 +1,7 @@
-
-
+## function for structural robustness
+## takes (x,y)
+## x: sequential (sequential extinctions; output from Sim_...)
+## y: S (number of species)
 robustness <- function(x, y){
   
   ## cumulative secondary extinctions
