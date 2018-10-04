@@ -1,3 +1,5 @@
+## from Owen Petchey
+
 ## Make N completely random food web with S species and L links
 ## The output is a matrix if N=1 or a list of matrices if N>1
 Random.model <- function(S, L, N=1){
