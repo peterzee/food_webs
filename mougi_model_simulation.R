@@ -45,7 +45,7 @@ library(lattice)
   
   
   # Integration window
-  time <- list(start = 0, end = 50, steps = 100)
+  time <- list(start = 0, end = 5, steps = 100)
   # dummy variable for lvm() function defined above
   parms <- c(0) ### dummy variable (can have any numerical value)
   

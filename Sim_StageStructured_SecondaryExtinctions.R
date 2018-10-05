@@ -1,3 +1,8 @@
+source('FoodWebFunctions.R')
+source('generateStageMatrix.R')
+source('secondary_extinction.R')
+
+
 S = 50    ## set species richness
 C = 0.05   ## set connectance
 N = 1     ## set the number of replicate webs to make
@@ -8,7 +13,7 @@ xxx <- Cascade.model(S, L, N)
 
 p_range <- seq(0.1, 0.9, by = 0.1)
 
-number_removals <- 10
+number_removals <- 20
 sequential <- array(NA, dim = c(length(p_range), number_removals))
 
 for (j in 1:length(p_range)){
