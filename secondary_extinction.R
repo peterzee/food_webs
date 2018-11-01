@@ -10,6 +10,7 @@ secondary_extinction <- function(stage_web){
   rm_stage_matrix <- tmp_rm_stage_matrix
   
   
+  
   eating_by_stage <- array(dim = c(max_stages, S))
   rm_eating_by_stage <- array(dim = c(max_stages, S))
   

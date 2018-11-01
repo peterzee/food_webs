@@ -111,8 +111,9 @@ secondary_extinction <- function(stage_web){
 }
   
   
-  number_removals <- 20
-  sequential <- rep(NA, number_removals)
+  number_removals <- 25
+  sequential <- rep(NAgm
+                    , number_removals)
   
   a <- stage_matrix
   

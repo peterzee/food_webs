@@ -4,7 +4,7 @@ source('secondary_extinction.R')
 
 
 S = 50    ## set species richness
-C = 0.05   ## set connectance
+C = 0.1   ## set connectance
 N = 1     ## set the number of replicate webs to make
 L = S^2*C  ## calculate number of links from S and C
 
@@ -13,7 +13,7 @@ xxx <- Cascade.model(S, L, N)
 
 p_range <- seq(0.1, 0.9, by = 0.1)
 
-number_removals <- 20
+number_removals <- 25
 sequential <- array(NA, dim = c(length(p_range), number_removals))
 
 for (j in 1:length(p_range)){
@@ -25,7 +25,8 @@ a <- stage_matrix
 
 for (i in 1:number_removals){
   
-  
+  print(i)
+  print(dim(a))
   
   x <- secondary_extinction(a)
   
